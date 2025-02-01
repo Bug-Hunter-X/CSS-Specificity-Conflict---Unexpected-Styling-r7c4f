@@ -1,0 +1,19 @@
+The solution involves understanding and managing CSS specificity. Here are two approaches:
+
+**1. Increasing the specificity of the intended style:**
+In this case, we can make the `.container p` selector more specific:
+```css
+.container p {
+  color: blue;
+}
+```
+This ensures that the `color: blue;` style is applied to the paragraph within the container.
+
+**2. Using the `!important` flag (use sparingly):**
+Though generally discouraged, the `!important` flag can override any specificity conflict. However, overuse can lead to maintainability issues.
+```css
+.container {
+  color: blue !important;
+}
+```
+This will force the blue color, but it's a less clean solution and should be avoided if possible.
